@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLaddersNavico", "SnakesAndLaddersNavico\SnakesAndLaddersNavico.csproj", "{D6A51AFA-EB96-400B-A908-2EEAEA02FCF3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLaddersNavico.Test", "SnakesAndLaddersNavico.Test\SnakesAndLaddersNavico.Test.csproj", "{C151E68F-595C-446F-AB90-420AF9FFBDCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLaddersGame", "SnakesAndLaddersGame\SnakesAndLaddersGame.csproj", "{3DFDB3A8-5CBC-46DC-B735-97306768E688}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D6A51AFA-EB96-400B-A908-2EEAEA02FCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6A51AFA-EB96-400B-A908-2EEAEA02FCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6A51AFA-EB96-400B-A908-2EEAEA02FCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6A51AFA-EB96-400B-A908-2EEAEA02FCF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C151E68F-595C-446F-AB90-420AF9FFBDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C151E68F-595C-446F-AB90-420AF9FFBDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C151E68F-595C-446F-AB90-420AF9FFBDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C151E68F-595C-446F-AB90-420AF9FFBDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFDB3A8-5CBC-46DC-B735-97306768E688}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFDB3A8-5CBC-46DC-B735-97306768E688}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFDB3A8-5CBC-46DC-B735-97306768E688}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFDB3A8-5CBC-46DC-B735-97306768E688}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
