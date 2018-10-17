@@ -4,6 +4,6 @@
     {
         MoveResult GetEffectOfSquare(int square);
 
-        MoveResult AttemptMove(int startingPosition, int endingPosition);
+        bool ValidateMove(int endingPosition);
     }
 }

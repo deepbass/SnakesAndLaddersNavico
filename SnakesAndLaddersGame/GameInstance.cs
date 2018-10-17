@@ -27,11 +27,14 @@ namespace SnakesAndLaddersGame
         public MoveResult Move()
         {
             var squaresToMove = _dice.Roll();
-            var attemptedMove = _board.AttemptMove(_playingToken.CurrentPosition,
-                _playingToken.CurrentPosition + squaresToMove);
-            if (attemptedMove.MoveStatus == MoveResult.Status.Rejected)
+            if (!_board.ValidateMove(_playingToken.CurrentPosition + squaresToMove))
             {
-                return attemptedMove;
+                return new MoveResult
+                {
+                    Message = $"Move Rejected",
+                    MoveStatus = MoveResult.Status.Rejected,
+                    NewSquare = _playingToken.CurrentPosition
+                };
             }
             var newPosition = _playingToken.Move(squaresToMove);
 

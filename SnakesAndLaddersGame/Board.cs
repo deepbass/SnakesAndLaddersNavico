@@ -23,25 +23,11 @@ namespace SnakesAndLaddersGame
             });
         }
 
-        public MoveResult AttemptMove(int startingPosition, int endingPosition)
+        public bool ValidateMove(int endingPosition)
         {
-            if (endingPosition > lastSquare)
-            {
-                return new MoveResult
-                {
-                    MoveStatus = MoveResult.Status.Rejected,
-                    NewSquare = startingPosition,
-                    Message = "Move rejected because you would have left the board"
-                };
-            }
-
-            return new MoveResult
-            {
-                MoveStatus = MoveResult.Status.Moved,
-                NewSquare = endingPosition,
-                Message = "Moved"
-            };
+            return endingPosition <= lastSquare;
         }
+
         public MoveResult GetEffectOfSquare(int square)
         {
             if (_specialSquares.TryGetValue(square, out var result))
